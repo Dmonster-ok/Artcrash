@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+
+summary::marker {
+    content: none;
+}
+
+body {
+    background-color: #eaeaf1;
+}
+
+details{
+    position: relative;
+}
+summary{
+    list-style: armenian;
+    border: 1px solid #c1d5ec;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition-duration: 0.2s;
+}
+.dropdown{
+    position: absolute;
+    right: 0;
+    text-align: right;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    width: 10em;
+    overflow: hidden;
+    background-color: #bcd5f6;
+    border: 1px solid #c1d5ec;
+}
+
+.dropdown p{
+    display: block;
+    padding: 0.2rem;
+    transition-duration: 0.2s;
+    border-bottom: 2px solid #c1d5ec;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #c5cbea;
+}
+
+.nav-items {
+    flex: 1;
+}
+
+.tabs>p {
+    margin: 0 .3rem;
+    transition-duration: 0.2s;
+}
+
+.tabs>p:hover {
+    color: #4d5ba9;
+    cursor: pointer;
+}
+
+.search {
+    display: flex;
+    justify-content: right;
+}
+
+.search input {
+    padding: .5rem;
+    border: 1px solid #c1d5ec;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.search input:focus {
+    outline: none;
+    font-weight: 700;
+    width: 80%;
+    border: 2px solid #c1d5ec;
+}
+
+.search input::placeholder {
+    color: #467fc1;
+}
+
+.active-tab {
+    color: #4d5ba9;
+    font-weight: 900;
+    text-decoration: underline;
+}
