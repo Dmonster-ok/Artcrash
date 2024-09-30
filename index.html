@@ -36,6 +36,17 @@
             </span>
         </details>
     </nav>
+    <div id="list">
+
+    </div>
+    <script type="text/javascript" charset="utf-8">
+        const list = document.getElementById("list")
+        for (i = 1; i <= 50; i++) {
+            const img = document.createElement("img")
+            img.src = `images/img/image${i}.png`
+            list.appendChild(img)
+        }
+    </script>
 </body>
 
 </html>
