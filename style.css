@@ -34,7 +34,7 @@ details{
 }
 summary{
     list-style: armenian;
-    border: 1px solid #c1d5ec;
+    text-align: right;
     cursor: pointer;
     padding: 0.5rem;
     border-radius: 5px;

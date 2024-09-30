@@ -1,3 +1,24 @@
-@media screen {
+
+/* show tabes */
+@media (max-width: 520px) {
+    .tabs {
+        display: none;
+    }
     
+    .search {
+        justify-content: center;
+    }
+    .search input {
+        width: auto;
+    }
+    .menu{
+        flex: 1;
+    }
+}
+
+/* hide menues */
+@media (min-width: 520px) {
+    .menu {
+        display: none;
+    }
 }
