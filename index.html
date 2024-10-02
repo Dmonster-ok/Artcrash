@@ -50,19 +50,21 @@
     <script type="text/javascript" charset="utf-8">
 
         window.onload = function () {
-            render("general")
+            render(["general"])
         }
 
-
+        let val = []
         function toggle(tag) {
-            let active = tag.classList.contains('active-tag')? false : true
+            let active = tag.classList.contains('active-tag') ? false : true
             if (active) {
                 tag.classList.add('active-tag')
-                
-                render(tag.value)
+                val.push(tag.value) 
+                console.log(val);
+                render(val)
             } else {
                 tag.classList.remove('active-tag')
-                render("general")
+                render(["general"])
+                val = []
             }
         }
 
@@ -75,7 +77,7 @@
                 list.removeChild(list.firstChild)
             }
 
-            let filterData = data.filter(e => e.category.includes(val))
+            let filterData = data.filter(e => e.category.includes(...val))
 
             for (let i = 0; i < filterData.length; i++) {
                 let img = document.createElement("img")
