@@ -36,16 +36,54 @@
             </span>
         </details>
     </nav>
+    <div class="tags">
+        <button class="tag" onclick="toggle(this)" value="abstract">Abstract</button>
+        <button class="tag" onclick="toggle(this)" value="textures">Textures</button>
+        <button class="tag" onclick="toggle(this)" value="3d">3D</button>
+        <button class="tag" onclick="toggle(this)" value="2d">2D</button>
+    </div>
+
     <div id="list">
 
     </div>
+    <script src="db.js"></script>
     <script type="text/javascript" charset="utf-8">
-        const list = document.getElementById("list")
-        for (i = 1; i <= 50; i++) {
-            const img = document.createElement("img")
-            img.src = `images/img/image${i}.png`
-            list.appendChild(img)
+
+        window.onload = function () {
+            render("general")
         }
+
+
+        function toggle(tag) {
+            let active = tag.classList.contains('active-tag')? false : true
+            if (active) {
+                tag.classList.add('active-tag')
+                
+                render(tag.value)
+            } else {
+                tag.classList.remove('active-tag')
+                render("general")
+            }
+        }
+
+
+        function render(val) {
+
+            const list = document.getElementById("list")
+
+            while (list.firstChild) {
+                list.removeChild(list.firstChild)
+            }
+
+            let filterData = data.filter(e => e.category.includes(val))
+
+            for (let i = 0; i < filterData.length; i++) {
+                let img = document.createElement("img")
+                img.src = filterData[i].src
+                list.appendChild(img)
+            }
+        }
+
     </script>
 </body>
 
