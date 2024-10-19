@@ -11,79 +11,78 @@
 
 <body>
     <nav>
-        <div class="nav-items">
+        <div>
             <a href="">
                 ArtCrash
                 <img src="images/logo.png" onerror="this.style.display='none'" alt="logo">
             </a>
         </div>
-        <div class="nav-items center tabs">
-            <p class="active-tab">Home</p>
-            <p>Explore</p>
-            <p>Login</p>
-        </div>
-        <div class="nav-items search">
-            <input type="search" placeholder="Search">
-        </div>
-        <details class="menu">
-            <summary>
-                <span class="material-symbols-outlined">menu</span>
-            </summary>
-            <span class="dropdown">
-                <p>Home</p>
-                <p>Explore</p>
-                <p>Login</p>
-            </span>
-        </details>
+        <p class="tab">Login</p>
     </nav>
+    <div>
+        <input class="search" type="search" placeholder="Search">
+    </div>
     <div class="tags">
         <button class="tag" onclick="toggle(this)" value="abstract">Abstract</button>
         <button class="tag" onclick="toggle(this)" value="textures">Textures</button>
         <button class="tag" onclick="toggle(this)" value="3d">3D</button>
         <button class="tag" onclick="toggle(this)" value="2d">2D</button>
     </div>
-
     <div id="list">
-
+        <div class="card">
+            <img src="images\img\image51.png" alt="">
+            <div class="card-body">
+                <span class="like"></span>
+                <span class="open">OPEN</span>
+            </div>
+        </div>
     </div>
     <script src="db.js"></script>
     <script type="text/javascript" charset="utf-8">
 
+        let selectedTags = [];
+
         window.onload = function () {
-            render(["general"])
+            render(["general"]);
         }
 
-        let val = []
         function toggle(tag) {
-            let active = tag.classList.contains('active-tag') ? false : true
-            if (active) {
-                tag.classList.add('active-tag')
-                val.push(tag.value) 
-                console.log(val);
-                render(val)
+            let isActive = tag.classList.contains('active-tag');
+
+            if (isActive) {
+                tag.classList.remove('active-tag');
+                selectedTags = selectedTags.filter(e => e !== tag.value);
             } else {
-                tag.classList.remove('active-tag')
-                render(["general"])
-                val = []
+                tag.classList.add('active-tag');
+                selectedTags.push(tag.value);
+            }
+
+            if (selectedTags.length > 0) {
+                render(selectedTags);
+            } else {
+                render(["general"]);  // Render general category when no tags are selected
             }
         }
 
+        function render(tags) {
+            const list = document.getElementById("list");
 
-        function render(val) {
-
-            const list = document.getElementById("list")
-
+            // Clear previous list
             while (list.firstChild) {
-                list.removeChild(list.firstChild)
+                list.removeChild(list.firstChild);
             }
 
-            let filterData = data.filter(e => e.category.includes(...val))
+            // Filter data to include items that match any of the selected tags
+            let filteredData = data.filter(item => {
+                return tags.some(tag => item.category.includes(tag));
+            });
 
-            for (let i = 0; i < filterData.length; i++) {
-                let img = document.createElement("img")
-                img.src = filterData[i].src
-                list.appendChild(img)
-            }
+            // Render filtered data
+            filteredData.forEach(item => {
+                let img = document.createElement("img");
+                img.src = item.src;
+                list.appendChild(img);
+            });
         }
 
     </script>
