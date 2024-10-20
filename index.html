@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artcrash</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
+    <script type="module" src="./main.js" async></script>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
         </div>
         <p class="tab">Login</p>
     </nav>
-    <div>
+    <div id="auto-slide">
         <input class="search" type="search" placeholder="Search">
     </div>
     <div class="tags">
@@ -28,64 +28,7 @@
         <button class="tag" onclick="toggle(this)" value="3d">3D</button>
         <button class="tag" onclick="toggle(this)" value="2d">2D</button>
     </div>
-    <div id="list">
-        <div class="card">
-            <img src="images\img\image51.png" alt="">
-            <div class="card-body">
-                <span class="like"></span>
-                <span class="open">OPEN</span>
-            </div>
-        </div>
-    </div>
-    <script src="db.js"></script>
-    <script type="text/javascript" charset="utf-8">
-
-        let selectedTags = [];
-
-        window.onload = function () {
-            render(["general"]);
-        }
-
-        function toggle(tag) {
-            let isActive = tag.classList.contains('active-tag');
-
-            if (isActive) {
-                tag.classList.remove('active-tag');
-                selectedTags = selectedTags.filter(e => e !== tag.value);
-            } else {
-                tag.classList.add('active-tag');
-                selectedTags.push(tag.value);
-            }
-
-            if (selectedTags.length > 0) {
-                render(selectedTags);
-            } else {
-                render(["general"]);  // Render general category when no tags are selected
-            }
-        }
-
-        function render(tags) {
-            const list = document.getElementById("list");
-
-            // Clear previous list
-            while (list.firstChild) {
-                list.removeChild(list.firstChild);
-            }
-
-            // Filter data to include items that match any of the selected tags
-            let filteredData = data.filter(item => {
-                return tags.some(tag => item.category.includes(tag));
-            });
-
-            // Render filtered data
-            filteredData.forEach(item => {
-                let img = document.createElement("img");
-                img.src = item.src;
-                list.appendChild(img);
-            });
-        }
-
-    </script>
+    <div id="list"></div>
 </body>
 
 </html>
