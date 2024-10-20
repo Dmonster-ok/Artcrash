@@ -75,12 +75,12 @@ function render(tags) {
         let card = document.createElement('div');
         card.classList.add('card');
         card.innerHTML = `
-            <img src="${item.src}" alt="item.src">
+            <img loading="lazy" src="${item.src}" alt="item.src">
             <div class="card-body">
                 <button class="like" onclick="like(this)"></button>
                 <button class="open" onclick="openDialog(this.value)" value=${item.id} >OPEN</button>
                 </div>`;
-                list.appendChild(card);
+        list.appendChild(card);
     });
 }
 
