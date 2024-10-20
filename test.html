@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image Slider</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .slider {
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            transition: background-image 0.5s ease-in-out;
+        }
+
+        .slider-controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .slider-controls button {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .slider-controls button:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="slider" id="slider">
+        <!-- Background images will be handled by JavaScript -->
+    </div>
+
+    <div class="slider-controls">
+        <button id="prev-btn">Prev</button>
+        <button id="next-btn">Next</button>
+    </div>
+
+    <script>
+        const slider = document.getElementById('slider');
+
+        // Array of image URLs to be used as backgrounds
+        const images = [
+            './images/img/image12.png',
+            './images/img/image13.png',
+            './images/img/image14.png'
+        ];
+
+        let currentIndex = 0;
+
+        // Function to update the background image
+        function updateBackgroundImage() {
+            slider.style.backgroundImage = `url(${images[currentIndex]})`;
+        }
+
+        // Event listeners for the "Next" and "Prev" buttons
+        document.getElementById('next-btn').addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateBackgroundImage();
+        });
+
+        document.getElementById('prev-btn').addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateBackgroundImage();
+        });
+
+        // Initialize slider with the first image
+        updateBackgroundImage();
+    </script>
+
+</body>
+
+</html>

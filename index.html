@@ -12,21 +12,19 @@
 <body>
     <nav>
         <div>
-            <a href="">
+            <a class="logo" href="">
+                <img src="images/logo.svg">
                 ArtCrash
-                <img src="images/logo.png" onerror="this.style.display='none'" alt="logo">
             </a>
         </div>
         <p class="tab">Login</p>
     </nav>
     <div id="auto-slide">
-        <input class="search" type="search" placeholder="Search">
+        <div class="slide center">
+            <input class="search" type="search" placeholder="Search">
+        </div>
     </div>
     <div class="tags">
-        <button class="tag" onclick="toggle(this)" value="abstract">Abstract</button>
-        <button class="tag" onclick="toggle(this)" value="textures">Textures</button>
-        <button class="tag" onclick="toggle(this)" value="3d">3D</button>
-        <button class="tag" onclick="toggle(this)" value="2d">2D</button>
     </div>
     <div id="list"></div>
 </body>
