@@ -45,7 +45,7 @@ nav {
     padding: 1rem 2rem;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     gap: .5rem;
@@ -60,7 +60,7 @@ nav {
     color: #4d5ba9;
 }
 
-#auto-slide{
+#auto-slide {
     height: 50vh;
     border: 1px solid #c1d5ec;
     overflow: hidden;
@@ -241,4 +241,10 @@ dialog::backdrop {
     text-shadow: 0px 0px 10px red;
     color: rgb(255, 56, 56);
     cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    #list {
+        columns: 2;
+    }
 }
