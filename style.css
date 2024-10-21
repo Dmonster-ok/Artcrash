@@ -247,4 +247,7 @@ dialog::backdrop {
     #list {
         columns: 2;
     }
+    #auto-slide {
+        height: 25vh;
+    }
 }
