@@ -112,13 +112,13 @@ export function openDialog(val) {
 function slider() {
     const slide = document.querySelector(".slide");
 
-    const images = ["./images/img/image1.png", "./images/img/image2.png", "./images/img/image3.png", "./images/img/image4.png", "./images/img/image5.png"];
+    const images = ["./images/img/image1.png", "./images/img/image16.png", "./images/img/image21.png", "./images/img/image22.png", "./images/img/image30.png"];
     let i = 0;
 
     function next() {
         slide.style.backgroundImage = `url(${images[i = (i + 1) % images.length]})`;
     }
-    setInterval(next, 5000);
+    setInterval(next, 2000);
 }
 
 
