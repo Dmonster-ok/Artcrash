@@ -118,7 +118,7 @@ function slider() {
     function next() {
         slide.style.backgroundImage = `url(${images[i = (i + 1) % images.length]})`;
     }
-    // setInterval(next, 5000);
+    setInterval(next, 5000);
 }
 
 
