@@ -4,7 +4,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image1.png",
+        "src": "images/img/image1.webp",
         "alt": "",
         "category": [
             "general"
@@ -15,7 +15,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image2.png",
+        "src": "images/img/image2.webp",
         "alt": "",
         "category": [
             "general"
@@ -26,7 +26,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image3.png",
+        "src": "images/img/image3.webp",
         "alt": "",
         "category": [
             "general",
@@ -38,7 +38,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image4.png",
+        "src": "images/img/image4.webp",
         "alt": "",
         "category": [
             "general",
@@ -50,7 +50,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image5.png",
+        "src": "images/img/image5.webp",
         "alt": "",
         "category": [
             "general"
@@ -61,7 +61,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image6.png",
+        "src": "images/img/image6.webp",
         "alt": "",
         "category": [
             "general",
@@ -73,7 +73,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image7.png",
+        "src": "images/img/image7.webp",
         "alt": "",
         "category": [
             "general"
@@ -84,7 +84,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image8.png",
+        "src": "images/img/image8.webp",
         "alt": "",
         "category": [
             "general",
@@ -96,7 +96,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image9.png",
+        "src": "images/img/image9.webp",
         "alt": "",
         "category": [
             "general"
@@ -107,7 +107,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image10.png",
+        "src": "images/img/image10.webp",
         "alt": "",
         "category": [
             "general",
@@ -119,7 +119,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image11.png",
+        "src": "images/img/image11.webp",
         "alt": "",
         "category": [
             "general"
@@ -130,7 +130,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image12.png",
+        "src": "images/img/image12.webp",
         "alt": "",
         "category": [
             "general",
@@ -142,7 +142,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image13.png",
+        "src": "images/img/image13.webp",
         "alt": "",
         "category": [
             "general"
@@ -153,7 +153,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image14.png",
+        "src": "images/img/image14.webp",
         "alt": "",
         "category": [
             "general"
@@ -164,7 +164,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image15.png",
+        "src": "images/img/image15.webp",
         "alt": "",
         "category": [
             "general",
@@ -176,7 +176,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image16.png",
+        "src": "images/img/image16.webp",
         "alt": "",
         "category": [
             "general"
@@ -187,7 +187,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image17.png",
+        "src": "images/img/image17.webp",
         "alt": "",
         "category": [
             "general",
@@ -199,7 +199,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image18.png",
+        "src": "images/img/image18.webp",
         "alt": "",
         "category": [
             "general"
@@ -210,7 +210,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image19.png",
+        "src": "images/img/image19.webp",
         "alt": "",
         "category": [
             "general"
@@ -221,7 +221,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image20.png",
+        "src": "images/img/image20.webp",
         "alt": "",
         "category": [
             "general",
@@ -233,7 +233,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image21.png",
+        "src": "images/img/image21.webp",
         "alt": "",
         "category": [
             "general",
@@ -246,7 +246,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image22.png",
+        "src": "images/img/image22.webp",
         "alt": "",
         "category": [
             "general",
@@ -257,7 +257,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image23.png",
+        "src": "images/img/image23.webp",
         "alt": "",
         "category": [
             "general"
@@ -268,7 +268,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image24.png",
+        "src": "images/img/image24.webp",
         "alt": "",
         "category": [
             "general",
@@ -280,7 +280,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image25.png",
+        "src": "images/img/image25.webp",
         "alt": "",
         "category": [
             "general"
@@ -291,7 +291,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image26.png",
+        "src": "images/img/image26.webp",
         "alt": "",
         "category": [
             "general",
@@ -303,7 +303,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image27.png",
+        "src": "images/img/image27.webp",
         "alt": "",
         "category": [
             "general",
@@ -315,7 +315,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image28.png",
+        "src": "images/img/image28.webp",
         "alt": "",
         "category": [
             "general",
@@ -327,7 +327,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image29.png",
+        "src": "images/img/image29.webp",
         "alt": "",
         "category": [
             "general"
@@ -338,7 +338,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image30.png",
+        "src": "images/img/image30.webp",
         "alt": "",
         "category": [
             "general"
@@ -349,7 +349,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image31.png",
+        "src": "images/img/image31.webp",
         "alt": "",
         "category": [
             "general"
@@ -360,7 +360,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image32.png",
+        "src": "images/img/image32.webp",
         "alt": "",
         "category": [
             "general",
@@ -372,7 +372,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image33.png",
+        "src": "images/img/image33.webp",
         "alt": "",
         "category": [
             "general"
@@ -383,7 +383,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image34.png",
+        "src": "images/img/image34.webp",
         "alt": "",
         "category": [
             "general"
@@ -394,7 +394,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image35.png",
+        "src": "images/img/image35.webp",
         "alt": "",
         "category": [
             "general"
@@ -405,7 +405,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image36.png",
+        "src": "images/img/image36.webp",
         "alt": "",
         "category": [
             "general",
@@ -417,7 +417,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image37.png",
+        "src": "images/img/image37.webp",
         "alt": "",
         "category": [
             "general",
@@ -429,7 +429,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image38.png",
+        "src": "images/img/image38.webp",
         "alt": "",
         "category": [
             "general",
@@ -441,7 +441,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image39.png",
+        "src": "images/img/image39.webp",
         "alt": "",
         "category": [
             "general",
@@ -453,7 +453,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image40.png",
+        "src": "images/img/image40.webp",
         "alt": "",
         "category": [
             "general",
@@ -465,7 +465,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image41.png",
+        "src": "images/img/image41.webp",
         "alt": "",
         "category": [
             "general",
@@ -477,7 +477,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image42.png",
+        "src": "images/img/image42.webp",
         "alt": "",
         "category": [
             "general"
@@ -488,7 +488,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image43.png",
+        "src": "images/img/image43.webp",
         "alt": "",
         "category": [
             "general"
@@ -499,7 +499,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image44.png",
+        "src": "images/img/image44.webp",
         "alt": "",
         "category": [
             "general",
@@ -511,7 +511,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image45.png",
+        "src": "images/img/image45.webp",
         "alt": "",
         "category": [
             "general"
@@ -522,7 +522,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image46.png",
+        "src": "images/img/image46.webp",
         "alt": "",
         "category": [
             "general",
@@ -534,7 +534,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image47.png",
+        "src": "images/img/image47.webp",
         "alt": "",
         "category": [
             "general",
@@ -546,7 +546,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image48.png",
+        "src": "images/img/image48.webp",
         "alt": "",
         "category": [
             "general"
@@ -557,7 +557,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image49.png",
+        "src": "images/img/image49.webp",
         "alt": "",
         "category": [
             "general",
@@ -569,7 +569,7 @@ const data = [
         "title": "",
         "artist": "",
         "description": "",
-        "src": "images/img/image50.png",
+        "src": "images/img/image50.webp",
         "alt": "",
         "category": [
             "general",

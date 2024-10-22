@@ -96,7 +96,7 @@ export function openDialog(val) {
     //create wrapper to maintain the image and close button
     let wrapper = document.createElement('div');
     wrapper.classList.add('dialog-wrapper', 'center');
-    wrapper.innerHTML = `<img id="dialog-img" src="images/img/image${val}.png" alt="">`;
+    wrapper.innerHTML = `<img id="dialog-img" src="images/img/image${val}.webp" alt="">`;
     let close = document.createElement('button');
     close.innerHTML = '&#10006;';
     close.id = 'close';
@@ -112,7 +112,7 @@ export function openDialog(val) {
 function slider() {
     const slide = document.querySelector(".slide");
 
-    const images = ["./images/img/image1.png", "./images/img/image16.png", "./images/img/image21.png", "./images/img/image22.png", "./images/img/image30.png"];
+    const images = ["./images/img/image1.webp", "./images/img/image16.webp", "./images/img/image21.webp", "./images/img/image22.webp", "./images/img/image30.webp"];
     let i = 0;
 
     function next() {
